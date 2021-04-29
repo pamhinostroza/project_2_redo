@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tesla Deaths</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Regular CSS -->
+  <link rel="stylesheet" href="../static/css/style.css">
+  <!-- d3.js -->
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <!-- d3.js Color Scale -->
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+</head>
+
+<body>
+  <!-- Setup for the structure via bootstrap -->
+  <div class="container">
+    <div class="row">
+      <!-- Title and subtitle of the dashboard page -->
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Tesla Deaths Dashboard</h1>
+      </div>
+      <!-- The div that holds our bar plot -->
+      <div class="col-md-6">
+        <div id="bar-plot"></div>
+      </div>
+      <!-- The div that holds our pie plot -->
+      <div class="col-md-6">
+        <div id="rate-bar-plot"></div>
+      </div>
+      <!-- The div that holds our multibar plot -->
+      <div class="col-md-6">
+        <div id="line-plot"></div>
+      </div>
+      <!-- The div that holds our d3.js graph -->
+      <div class="col-md-6">
+        <!-- Initialize a select button -->
+        <select id="selectButton"></select>
+        <h4>Deaths per Country</h4>
+        <div id="my_dataviz"></div>
+      </div>
+      <!-- The div that holds our map -->
+      <!-- <div class="col-md-12"> -->
+      <!-- <div id="heat_map"></div> -->
+      <!-- D3 JavaScript -->
+      <!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+      <!-- can change version to v4 like code from sasha -->
+      <!-- API key -->
+      <!-- <script type="text/javascript" src="../static/js/config.js"></script> -->
+      <!-- Our JavaScript -->
+      <!-- <script type="text/javascript" src="../static/js/app.js"></script> -->
+    </div>
+  </div>
+  <script src="../static/js/app.js"></script>
+</body>
+
+</html>
